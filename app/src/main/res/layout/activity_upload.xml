@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:background="#e6dede"
+    android:orientation="vertical"
+    tools:context="com.example.vartikajain.eduindia.Activities.UploadActivity">
+
+<TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD YOUR FILES"
+        android:textColor="#fa803e"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Upload Signature" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Upload Identity Proof" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Upload Xth Marksheet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Upload XIIth Marksheet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Upload Passport" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_marginTop="2px"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:src="@drawable/ic_add_to_photos_black_24dp" />
+
+            <ImageView
+                android:id="@+id/ivSignature"
+                android:layout_marginTop="67px"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:src="@drawable/ic_add_to_photos_black_24dp" />
+            <ImageView
+                android:id="@+id/ivIdentity"
+                android:layout_marginTop="70px"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:src="@drawable/ic_add_to_photos_black_24dp" />
+            <ImageView
+                android:id="@+id/ivTenth"
+                android:layout_marginTop="71px"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:src="@drawable/ic_add_to_photos_black_24dp" />
+            <ImageView
+                android:id="@+id/ivTwelfth"
+                android:layout_marginTop="71px"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:src="@drawable/ic_add_to_photos_black_24dp" />
+            <ImageView
+                android:id="@+id/ivPassport"
+                android:layout_marginTop="71px"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:src="@drawable/ic_add_to_photos_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:background="#fa803e"
+        android:textColor="#ffffff"
+        android:text="SUBMIT"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

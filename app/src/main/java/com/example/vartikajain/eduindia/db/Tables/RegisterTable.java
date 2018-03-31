@@ -44,6 +44,7 @@ public class RegisterTable {
                     Columns.DOB + TYPE_TEXT +COMMA+
                     Columns.ADDRESS + TYPE_TEXT +COMMA+
                     Columns.GENDER + TYPE_TEXT +COMMA+
+                    Columns.PASS + TYPE_TEXT +COMMA +
                     Columns.RELIGION + TYPE_TEXT +COMMA+
                     Columns.NATION + TYPE_TEXT +COMMA+
                     Columns.SCHOOL + TYPE_TEXT +COMMA+
@@ -63,6 +64,7 @@ public class RegisterTable {
         registerData.put(Columns.DOB,register.getDob());
         registerData.put(Columns.ADDRESS,register.getAddress());
         registerData.put(Columns.GENDER,register.getGender());
+        registerData.put(Columns.PASS,register.getPass_no());
         registerData.put(Columns.RELIGION,register.getReligion());
         registerData.put(Columns.NATION,register.getNationality());
         registerData.put(Columns.SCHOOL,register.getSchool());
@@ -70,7 +72,6 @@ public class RegisterTable {
         registerData.put(Columns.MARKS_10,register.getMarks_10());
         registerData.put(Columns.MARKS_12,register.getMarks_12());
         registerData.put(Columns.MARKS_UNI,register.getMarks_uni());
-
         return db.insert(TABLE_NAME,
                 null,
                 registerData

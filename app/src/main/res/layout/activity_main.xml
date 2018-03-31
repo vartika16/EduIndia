@@ -259,6 +259,8 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_box"/>
                     <CheckBox
+                        android:id="@+id/cbmain"
+                        android:onClick="oncbclicked"
                         android:layout_marginTop="40px"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -266,18 +268,24 @@
                         android:scaleY="0.7"
                         android:text="JEE(Mains)"/>
                     <CheckBox
+                        android:id="@+id/cbadvance"
+                        android:onClick="oncbclicked"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:scaleX="0.7"
                         android:scaleY="0.7"
                         android:text="JEE(Advance)"/>
                     <CheckBox
+                        android:id="@+id/cbgmat"
+                        android:onClick="oncbclicked"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:scaleX="0.7"
                         android:scaleY="0.7"
                         android:text="GMAT"/>
                     <CheckBox
+                        android:id="@+id/cbclat"
+                        android:onClick="oncbclicked"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:scaleX="0.7"
@@ -288,7 +296,7 @@
 
             <Button
                 android:id="@+id/btnsubmit"
-                android:text="Submit"
+                android:text="Next"
                 android:textColor="#ffffff"
                 android:background="#f05c0c"
                 android:layout_gravity="center"
